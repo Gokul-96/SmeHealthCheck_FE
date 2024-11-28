@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 // Case study
@@ -6,9 +6,13 @@ import React from 'react'
 const CompanyInfo = () => {
     const [companyUEN, setCompanyUEN] = useState("");
     const [companyName, setCompanyName] = useState("");
-
-let validationForm = () =>{}
-
+const [isValid, setIsValid] = useState(false);
+let validationForm = () =>{
+ const regex =/^[0-9] {8} [A-Za-z]$/;
+ const isUENValid = regex.test(companyUEN);
+ const isNameValid = companyName.length > 0; 
+ setIsValid(isUENValid && isNameValid);
+};
 
 const handleUENChange = (e) => {
         setCompanyUEN(e.target.value);
