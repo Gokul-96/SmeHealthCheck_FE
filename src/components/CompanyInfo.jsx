@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import './CompanyInfo.css';
 
 // Case study
 // 1. UEN Format 8 digit + 1 alphabet & Name Format - String
@@ -29,17 +29,18 @@ const handleUENChange = (e) => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form >
  <div>
+  <h2 className='company'>Company Information</h2>
 <lable htmlfor='UEN'>
     Company UEN
 </lable>
-<input type='text' id='UEN' name='Company_UEN' value={UEN} placeholder='e.g., 34341256G' onChange={handleUENChange}/>
+<input type='text' id='UEN' name='Company_UEN' value={companyUEN} placeholder='e.g., 34341256G' onChange={handleUENChange}/>
 
 <lable htmlfor='Name'>
     Company Name
 </lable>
-<input type='text' id='Name' name='Company_Name' value={Name}    onChange={handleNameChange}placeholder="Enter Company Name" />
+<input type='text' id='Name' name='Company_Name' value={companyName}    onChange={handleNameChange}placeholder="Enter Company Name" />
 
 
 

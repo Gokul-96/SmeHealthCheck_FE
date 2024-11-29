@@ -1,10 +1,17 @@
 import React from 'react'
-
+import './Header.css';
 const Header = () => {
   return (
-    <div>
-        SME HealthCheck - Get Started
+    <div className='container'>
+         <span>
+        <img
+          src="https://smehealthcheck.credilinq.ai/static/images/logo.svg"
+          alt="Logo"
+        />
+      </span>
+       <span className='text'><p>SME HealthCheck - Get Started</p> </span>
     </div>
+    
   )
 }
 
