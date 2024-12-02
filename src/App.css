@@ -1,0 +1,62 @@
+/* Step Indicators */
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.step-incomplete {
+  background-color: red;
+}
+
+.step-complete {
+  background-color: green;
+}
+
+/* Form Styling */
+.step-form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
